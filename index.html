@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>김수진 온라인 이력서</title>
+    <!-- <link rel="stylesheet" href="application.css"> -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+
+/* reset css */
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; 
+    font-size: 100%
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block}
+body{font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px; color: #333;min-width: 1200px}
+ol, ul{list-style: none}
+table{border-collapse: collapse; border-spacing: 0}
+address{font-style: normal}
+a{color: #333; text-decoration: none}
+img{border: 0; vertical-align: top}
+h1,h2,h3,h4,h5,h6{font-family: 'TmoneyRoundWindExtraBold', sans-serif;}
+textarea{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.hidden{
+    display: block; 
+    position: absolute;
+    left: -1000%; 
+    width: 1px; 
+    height: 1px;
+    overflow: hidden; 
+    color: #fff}
+
+::selection {
+    color: #fff;
+    background: #25a022;
+}
+.clearfix::after{
+    display: block;
+    clear: both;
+    content:"";
+}
+
+
+#wrap{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.inner{
+    margin: 0 auto;
+    width: 900px;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0 60px;
+    letter-spacing: 10px;
+}
+.row1{
+    margin-bottom: 30px;
+}
+.row1 li{
+    float: left;
+}
+.row1 li:last-of-type{
+    float: right;
+}
+.table_wrap{
+    border: 2px solid #333;
+}
+.table_wrap>.basic_info>li{
+    float: left;
+}
+.table_wrap img{
+    width: 96%;
+    margin: 2%;
+    height: 96%;
+}
+.img_wrap{
+    width: 16%;
+}
+.info_wrap{
+    width: 83.8%;
+}
+.bd1_r{
+    border-right: 1px solid #333;
+}
+.bd1_l{
+    border-left: 1px solid #333;
+}
+.row{
+    overflow: hidden;
+}
+.items{
+    border-bottom: 1px solid #333;
+    overflow: hidden;
+}
+.no-bd-bottom{
+    border-bottom: 0;
+}
+.items li{
+    float: left;
+    width: 50%;
+}
+.items.half li{
+    width: 100%;
+}
+.items li dl{
+    overflow: hidden;
+}
+.items li dt,.items li dd{
+    padding: 11.5px 10px;
+}
+.items li dt{
+    float: left;
+    width: 27%;
+    font-weight: 600;
+    border-right: 1px solid #333;
+    box-sizing: border-box;
+    background: #efefef;
+}
+.items.half dt{
+    width: 13.5%;
+}
+.items li dd{
+    float: left;
+    width: 67%;
+}
+.items.half dd{
+    width: 83.5%;
+}
+h2{
+    font-size: 22px;
+    margin: 50px 0 20px;
+}
+.head{
+    width: 100%;
+    border-bottom: 1px solid #333;
+    background: #efefef;
+}
+.head li{
+    float: left;
+    text-align: center;
+    font-weight: 600;
+    padding:  10px 0;
+    box-sizing: border-box
+}
+.education .head li:first-of-type{
+    width: 25%;  
+}
+.education .head li:nth-of-type(2){
+    width: 35%;
+}
+.education .head li:nth-of-type(3){
+    width: 25%;
+}
+.education .head li:last-of-type{
+    width: 15%;
+}
+.items dt,.items dd{
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    word-break: keep-all
+}
+.education .items dt{
+    width: 25%;      
+}
+.education .items dd:first-of-type{
+    width: 35%;
+}
+.education .items dd:nth-of-type(2){
+    width: 25%;
+}
+.education .items dd:last-of-type{
+    width: 15%;
+}
+.acheivement .head li:first-of-type{
+    width: 25%;
+}
+.acheivement .head li:nth-of-type(2){
+    width: 20%;
+}
+.acheivement .head li:nth-of-type(3){
+    width: 55%;
+}
+.acheivement2 .head li:nth-of-type(2){
+    width: 55%;
+}
+.acheivement2 .head li:nth-of-type(3){
+    width: 20%;
+}
+.acheivement .items dt{
+    width: 25%;
+}
+.acheivement .items dd:nth-of-type(1){
+    width: 20%;
+}
+.acheivement .items dd:nth-of-type(2){
+    width: 55%;
+}
+.acheivement2 .items dd:nth-of-type(1){
+    width: 55%;
+}
+.acheivement2 .items dd:nth-of-type(2){
+    width: 20%;
+}
+.portfolio .head li:first-of-type{
+    width: 25%;
+}
+.portfolio .head li:nth-of-type(2),.portfolio .head li:nth-of-type(3){
+    width: 37.5%;
+}
+.portfolio .items dt{
+    width: 25%;
+    font-weight: 600;
+}
+.portfolio .items dd{
+    width: 37.5%;
+}
+.items a{
+    text-decoration: underline;
+    color: #2630f5;
+}
+.items a:hover{
+    filter: grayscale(.5)
+}
+.skill .head li:first-of-type{
+    width: 30%;
+}
+.skill .head li:last-of-type{
+    width: 70%;
+}
+.skill .items dt{
+    width: 30%;
+    font-weight: 600;
+}
+.skill .items dd{
+    width: 70%;
+}
+.intro_wrap{
+    border: 2px solid #333;
+}
+.intro_wrap dt{
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+    background: #efefef;
+    letter-spacing: 5px
+}
+.intro_wrap dd{
+    border-top: 1px solid #333;
+    padding: 20px;
+    line-height: 2em;
+    text-align: left
+}
+.intro_wrap dd strong{
+    margin-bottom: 15px;
+    display: block;
+}
+.intro_wrap dd p{
+    margin-bottom: 10px;
+}
+p.signature{
+    margin: 50px 0 30px;
+    text-align: right;
+}
+p.name{
+    text-align: right;
+    font-weight: 600;
+}
+p.name img{
+    position: relative;
+    top: -33px;
+    right: 40px;
+}
+</style>
+<body>
+    <div id="wrap">
+        <div class="inner">
+            <h1>이력서</h1>
+            <div class="table_wrap">
+                <ul class="clearfix basic_info">
+                    <li class="img_wrap bd1_r">
+                        <img src="./sujin.jpg" alt="증명사진">
+                    </li>
+                    <li class="info_wrap">
+                        <ul class="items">
+                            <li>
+                                <dl>
+                                    <dt>성명</dt>
+                                    <dd>김수진</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt class="bd1_l">한자</dt>
+                                    <dd>金 秀 眞</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li>
+                                <dl>
+                                    <dt>E-mail</dt>
+                                    <dd>snsk0612@naver.com</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt class="bd1_l">생년월일</dt>
+                                    <dd>1990년 06월 12일</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul class="items">
+                            <li>
+                                <dl>
+                                    <dt>휴대폰</dt>
+                                    <dd>010-5532-4507</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <dl>
+                                    <dt class="bd1_l">비상연락처</dt>
+                                    <dd>010-3909-4507(母)</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                        <ul class="items no-bd-bottom half">
+                            <li>
+                                <dl>
+                                    <dt>주소</dt>
+                                    <dd>서울시 금천구 남부순환로130길 61 지오빌 203호</dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <h2>학력 사항</h2>
+            <div class="table_wrap clearfix">
+                <ul class="acheivement acheivement2">
+                    <li class="head">
+                        <ul class="clearfix">
+                            <li>
+                                입학/졸업
+                            </li>
+                            <li class="bd1_r bd1_l">
+                                학교
+                            </li>
+                            <li>
+                                학과
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                2014년 9월 ~ 2017년 7월
+                            </dt>
+                            <dd class="bd1_r bd1_l">
+                                심양사범대학교
+                            </dd>
+                            <dd>
+                                대외한어과
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                2009년 3월 ~ 2011년 2월
+                            </dt>
+                            <dd class="bd1_r bd1_l">
+                                연성대학교
+                            </dd>
+                            <dd>
+                                관광중국어과
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items no-bd-bottom">
+                        <dl>
+                            <dt>
+                                2006년 3월 ~ 2009년 2월
+                            </dt>
+                            <dd class="bd1_r bd1_l">
+                                서서울생활과학고등학교 
+                            </dd>
+                            <dd>
+                                조리과학과
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <h2>경력사항</h2>
+            <div class="table_wrap clearfix">
+                <ul class="acheivement">
+                    <li class="head">
+                        <ul class="clearfix">
+                            <li>
+                                근무기간
+                            </li>
+                            <li class="bd1_r bd1_l">
+                                회사명
+                            </li>
+                            <li>
+                                직무
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                2021년 11월 ~ 재직중
+                            </dt>
+                            <dd class="bd1_r bd1_l">
+                                (주)비트리
+                            </dd>
+                            <dd>
+                                웹퍼블리셔, 프론트엔드
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                2018년 02월 ~ 2020년 07월
+                            </dt>
+                            <dd class="bd1_r bd1_l">
+                                에어코리아(진에어)<br>JAS(제주항공)
+                            </dd>
+                            <dd>
+                                국제,국내선 수속 / 출,도착 업무
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items no-bd-bottom">
+                        <dl>
+                            <dt>
+                                2017년 08월 ~ 2018년 01월
+                            </dt>
+                            <dd class="bd1_r bd1_l">
+                                두타면세점 라인프렌즈 
+                            </dd>
+                            <dd>
+                                중국인손님응대
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <h2>교육사항</h2>
+            <div class="table_wrap clearfix">
+                <ul class="education">
+                    <li class="head">
+                        <ul class="clearfix">
+                            <li>
+                                년 / 월
+                            </li>
+                            <li class="bd1_r bd1_l">
+                                교육과정
+                            </li>
+                            <li class="bd1_r">
+                                교육기관
+                            </li>
+                            <li>
+                                비고
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                2021년 03월 ~ 2021년 09월
+                            </dt>
+                            <dd class="bd1_r bd1_l">
+                                UI&UX디자인 웹퍼블리셔&프론트엔드 개발자 양성과정 (NCS 과정)
+                            </dd>
+                            <dd class="bd1_r">
+                                그린컴퓨터아카데미
+                            </dd>
+                            <dd>수료</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <h2>직무능력사항</h2>
+            <div class="table_wrap clearfix">
+                <ul class="skill">
+                    <li class="head">
+                        <ul class="clearfix">
+                            <li>
+                                프로그램 (사용언어)
+                            </li>
+                            <li class="bd1_l">
+                                활용능력
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                HTML5 / CSS3<br>(Sass, Less)
+                            </dt>
+                            <dd class="bd1_l">
+                                직접 디자인한 시안 또는 디자인 되어있는 웹사이트 시안으로 웹표준과 웹접근성을 준수한 시맨틱 마크업으로 웹사이트를 구현할 수 있고, 요소마다의 스타일을 파악하여 유지 및 보수 가능
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                JavaScript/JQuery
+                            </dt>
+                            <dd class="bd1_l">
+                                JQuery와 같은 라이브러리를 활용하여 사이트를 구현하는데 필요한 다양한 동적 기능과 이벤트의 구현 가능
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                워드프레스
+                            </dt>
+                            <dd class="bd1_l">
+                                다양한 테마와 플러그/위젯을 제공하는 오픈소스 CMS 중 가장 많이 쓰이는 워드프레스를 이용하여 홈페이지의 구축 및 관리 가능
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                Adobe Photoshop
+                            </dt>
+                            <dd class="bd1_l">
+                                웹페이지 디자인 작업과 대부분의 기능적인 부분에 대한 작업 가능
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                MS Office (워드/엑셀/ppt)
+                            </dt>
+                            <dd class="bd1_l">
+                                업무상 회의나 업무적인 소통을 바로 기록할 수 있으며 기본적인 범위에서의 사용 가능
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <h2>자격 및 면허 취득</h2>
+            <div class="table_wrap clearfix">
+                <ul class="portfolio">
+                    <li class="head">
+                        <ul class="clearfix">
+                            <li>
+                                취득일
+                            </li>
+                            <li class="bd1_r bd1_l">
+                                자격증명
+                            </li>
+                            <li>
+                                발행기관
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <dl>
+                            <dt>
+                                2018년
+                            </dt>
+                            <dd class="bd1_r bd1_l">         
+                                항공안전시스템
+                            </dd>
+                            <dd>
+                                IATA KOREA
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items no-bd-bottom">
+                        <dl>
+                            <dt>
+                                2021년 10월 18일
+                            </dt>
+                            <dd class="bd1_r bd1_l">
+                                운전면허 2종 보통
+                            </dd>
+                            <dd>
+                                서울특별시경찰청
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <h1>자기소개서</h1>
+            <div class="intro_wrap clearfix">
+                <ul>
+                    <li class="items">
+                        <dl class="clearfix">
+                            <dt>입사동기 및 포부</dt>
+                            <dd>
+                                <strong>
+                                    [내가 목표하는 것이 내 손에 잡힐 때까지!]
+                                </strong>
+                                <p>안녕하세요. 김수진이라고 합니다.
+                                    대학교 졸업 후, 중국으로 단기 연수를 다녀오고 중국어를 더 잘하고 싶은 목표를 세우게 되었습니다. 유학 당시 중국 내 여러 도시를 여행하며 많은 사람들과 소통했고, 자연스럽게 서로 다른 문화 속에서 공감대를 형성하는 방법에 관심을 가지게 되었습니다. 그러던 중, 각기 다른 문화와 배경을 가진 사람들이 함께 즐길 수 있는 게임의 힘에 감동을 받았고, 게임 산업에 진지하게 도전하고 싶다는 목표가 생겼습니다.
+                                </p><p>
+                                    중국어를 전공하고 공항이나 면세점에서 근무하며 직접적으로 중국 손님들을 응대하기도 했고, 또한 전공과는 다른 분야인 웹개발 프론트엔드로 근무하면서 팀원들과의 소통을 통해 목표를 설정하고, 각자의 역할을 명확히 분담하며 프로젝트를 성공적으로 완수한 경험이 있습니다. 이 과정에서 협력의 중요성을 깊이 체감했고, 팀워크를 바탕으로 더 큰 목표를 달성할 수 있다는 것을 깨달았습니다. 이러한 협업 경험은 게임 개발 과정에서 팀원들과의 효과적인 소통과 조율에 도움이 될 것이라 확신합니다.
+                                </p><p>
+                                    입사 후에는 기획과 분석 역량을 꾸준히 발전시키고, 다양한 문화와 언어적 배경을 가진 유저들이 공감할 수 있는 게임 경험을 만들어 나가고자 합니다. 언어 공부도 이어가며, 글로벌 유저들이 쉽게 접근할 수 있는 콘텐츠를 설계하는 데에도 힘쓰겠습니다. 언젠가는 저와 같은 열정을 가진 신입들에게 도움을 줄 수 있는 선배로 성장하여, 함께 게임 산업을 이끌어나가는 인재로 자리매김하고 싶습니다.
+                                </p><p>
+                                    그라비티의 명성에 걸맞은 열정과 실력을 갖추어, “이 프로젝트는 그 사람에게 맡겨도 되겠다”라는 신뢰를 얻는 직원이 되겠습니다.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items">
+                        <dl class="clearfix">
+                            <dt>대인관계</dt>
+                            <dd>
+                                <strong>
+                                    [ “不怕慢, 只怕站.” (“느린 것을 두려워하지 말고, 멈추어 있는 것을 두려워하라.”)]
+                                </strong>
+                                <p>이 문장은 제가 가장 좋아하는 중국어 문구로, 어려운 상황에서도 포기하지 않고 꾸준히 나아가면 결국 좋은 결과를 얻을 수 있다는 의미를 담고 있습니다. 저는 대인관계도 마찬가지로, 상대방에 대한 꾸준한 배려와 존중이 신뢰로 이어진다고 생각합니다.
+                                </p><p>
+                                    대학교에 입학한 후, 부모님께 부담을 드리지 않고자 학비를 스스로 마련하기 위해 여러 아르바이트를 병행하며 학업을 이어갔습니다. 특히 한 음식점에서 아르바이트를 할 당시, 첫 출근 날부터 함께 일하는 분으로부터 이유 없는 미움을 받으며 힘든 시기를 겪었지만, 이 일을 포기하고 싶지 않았기에 그분을 이해하고 관계를 개선하기로 결심했습니다. 이후 더 살갑게 다가가고, 열심히 일하는 모습을 보여드린 결과 결국 그분과 친해졌고, 사장님이 가장 신뢰하는 직원이 될 수 있었습니다.
+                                </p><p>
+                                    이 경험을 통해 어떤 조직에서든 존중과 배려가 중요한 관계의 기반이 된다는 것을 배웠습니다. 문제 상황이 생기더라도 상대방을 존중하고 먼저 다가가는 자세를 가지면 더 견고한 관계를 만들어갈 수 있다는 신념이 생겼습니다. 이러한 경험은 회사에서 팀원들과 협력하며 소통하는 데 큰 밑거름이 되어왔습니다.
+                                </p><p>
+                                    저는 게임 산업의 특성상 다양한 배경의 팀원들과 협업할 일이 많다고 생각합니다. 프로젝트를 성공으로 이끌기 위해서는 개개인의 역할을 존중하고, 서로 배려하는 태도가 중요하다고 믿습니다. 앞으로도 긍정적인 마음가짐과 강한 책임감을 바탕으로, 팀의 목표를 위해 최선을 다하며 회사에 필요한 인재로 성장하고자 합니다.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="items">
+                        <dl class="clearfix">
+                            <dt>가치관</dt>
+                            <dd>
+                                <strong>
+                                    [세상에서 가장 미련한 말 “그랬다면..”]
+                                </strong>
+                                <p>어떤 일을 시작도 하지 못한 것을 후회했던 적도 있고, 가볍게 선택한 일을 돌이켜 후회했던 경험도 있습니다. 이러한 경험은 저에게 '신중함'의 중요성을 일깨워 주었고, 여러 번 검토하고 신중하게 선택한다면 ‘그때 그랬다면…’ 하는 후회를 줄일 수 있음을 깨닫게 했습니다.
+                                </p><p>
+                                    20대 중반, 저는 새로운 도전을 위해 중국으로 유학을 떠났습니다. 당시 제 주변 친구들은 이미 직장을 구해 정착해가고 있었기에, 다시 공부를 선택한 제 자신이 불안하기도 했고, 옳은 결정인지 의문이 들기도 했습니다. 하지만 저는 ‘후회하는 시간만큼 아까운 것은 없다’라는 생각으로 결심했고, 그 선택을 통해 배운 것들이 지금의 저를 있게 했습니다. 한 번의 용기가 이후 선택들을 즐거운 도전으로 바꾸어 주었고, 경험을 통해 실천이 주는 성취를 알게 되었습니다. 만약 다시 그 순간으로 돌아간다고 해도 저는 유학을 떠날 것입니다.
+                                </p><p>
+                                    유학 전에는 목표보다는 "그때 그랬다면…" 하고 후회하는 일이 많았지만, 과거는 바꿀 수 없다는 사실을 받아들이고 나니, 바뀔 미래를 위해 계획하고 실천하는 힘을 얻게 되었습니다. 그 선택은 저에게 ‘중국어’라는 무기가 되었고, 지금 이렇게 그라비티에 지원할 수 있는 동기가 되었습니다. 또한, 저는 항상 ‘내가 틀릴 수도 있다’는 가능성을 인정하고, 다른 사람의 의견을 경청하고 존중함으로써 발전해 나가고자 합니다.
+                                </p><p>
+                                    게임 산업에서 다양한 사람들과 협력하여 좋은 결과를 만들어내기 위해서는 서로를 이해하고 존중하는 자세가 필수적이라 생각합니다. 제 신념처럼 신중하고 성실한 태도로 프로젝트에 임하며, 나중에 후회할 일이 없도록 최선을 다하는 팀원이 되겠습니다.
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>        
+
+            <p class="signature">
+                    위에 기재한 사항은 사실과 틀림이 없습니다.
+            </p>
+            <p class="name">김수진 (인)<img src="./sing.png" alt=""></p>
+        </div>
+        
+    </div>
+
+</body>
+</html>
